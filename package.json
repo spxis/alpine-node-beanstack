@@ -1,0 +1,129 @@
+{
+  "name": "alpine-beanstack",
+  "displayName": "Alpine BeanStack: Full Stack JavaScript Project",
+  "version": "6.0.1",
+  "author": {
+    "name": "John Morris",
+    "email": "john@spxis.com"
+  },
+  "contributors": [
+    {
+      "name": "Sébastien Gruhier",
+      "email": "sebastien.gruhier@atigeo.com"
+    },
+    {
+      "name": "Elton Pao",
+      "email": "elton.pao@atigeo.com"
+    }
+  ],
+  "description": "This is the Alpine BeanStack Full Stack JavaScript Project.",
+  "homepage": "http://www.spxn.com",
+  "copyright": "© 2014-2016 SPXIS. All Rights Reserved.",
+  "readme": "# BeanStack Full Stack JavaScript Project.\n",
+  "readmeFilename": "README.md",
+  "private": true,
+  "main": "app.js",
+  "templateEngine": "hbs",
+  "buildSystem": "grunt",
+  "scripts": {
+    "start": "node ./bin/www",
+    "welcome": "node ./bin/welcome",
+    "---": "Use 'npm run-script develop' or 'npm run develop' to run the 'develop' script",
+    "develop": "NODE_ENV=development nodemon ./bin/www",
+    "staging": "NODE_ENV=staging node ./bin/www",
+    "production": "NODE_ENV=production node ./bin/www",
+    "----": "Use 'npm run-script build' or 'npm run build' to build necessary files and folders when first starting",
+    "build": "jspm install && bower install && grunt install",
+    "postinstall": ""
+  },
+  "engines": {
+    "node": ">=6.2.0",
+    "npm": ">=3.8.9"
+  },
+  "dependencies": {
+    "async": "^1.0.0",
+    "bluebird": "^3.4.0",
+    "body-parser": "^1.15.1",
+    "bower": "^1.7.9",
+    "connect": "^3.4.1",
+    "cookie-parser": "^1.4.2",
+    "cookie-session": "^1.2.0",
+    "debug": "^2.1.1",
+    "express": "^4.13.4",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.13.0",
+    "handlebars": "^4.0.5",
+    "handlebars-helpers": "^0.6.1",
+    "json-stringify-safe": "^5.0.0",
+    "mkdirp": "^0.5.1",
+    "moment": "^2.13.0",
+    "moment-timezone": "^0.3.1",
+    "passport": "^0.2.2",
+    "passport-local": "^1.0.0",
+    "pretty-error": "^2.0.0",
+    "request": "^2.72.0",
+    "request-promise": "^3.0.0",
+    "rimraf": "^2.5.2",
+    "serve-favicon": "^2.2.0",
+    "sprintf": "^0.1.4",
+    "traceur": "^0.0.110",
+    "underscore": "^1.8.3",
+    "winston": "^2.2.0",
+    "winston-request-logger": "^1.0.7"
+  },
+  "devDependencies": {
+    "connect-livereload": "^0.5.3",
+    "grunt": "^1.0.1",
+    "grunt-babel": "^6.0.0",
+    "grunt-bower-task": "^0.4.0",
+    "grunt-bowercopy": "^1.1.0",
+    "grunt-bump": "0.8.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-reload": "^0.2.0",
+    "grunt-shell": "^1.1.1",
+    "grunt-systemjs-builder": "^0.2.2",
+    "grunt-version": "^1.1.1",
+    "jspm": "^0.16.24",
+    "livereload": "^0.3.7",
+    "load-grunt-tasks": "^3.3.0"
+  },
+  "directories": {
+    "test": "test",
+    "packages": "jspm_packages",
+    "baseURL": "public"
+  },
+  "license": "MIT",
+  "keywords": [
+    "atigeo",
+    "beanstack",
+    "xui",
+    "xpatterns",
+    "platform",
+    "node",
+    "mongo",
+    "express",
+    "grunt",
+    "bower",
+    "big data"
+  ],
+  "jspm": {
+    "directories": {
+      "test": "test"
+    },
+    "dependencies": {
+      "text": "github:systemjs/plugin-text@^0.0.4"
+    },
+    "devDependencies": {
+      "traceur": "github:jmcriffey/bower-traceur@0.0.93",
+      "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.93"
+    }
+  }
+}

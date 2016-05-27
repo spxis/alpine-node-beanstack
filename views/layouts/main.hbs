@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    {{> head-meta }}
+    {{> head-css.styles }}
+    {{> head-js-error-service }}
+    <title>{{ title }}</title>
+</head>
+<body class="xui">
+    {{> header-title }}
+
+    {{{ body }}}
+
+    {{> footer }}
+    {{> body-js.scripts }}
+    {{> angular-js.scripts }}
+</body>
+</html>

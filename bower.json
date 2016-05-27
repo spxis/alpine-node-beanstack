@@ -1,0 +1,76 @@
+{
+  "name": "alpine-beanstack",
+  "version": "6.0.1",
+  "author": {
+    "name": "John Morris",
+    "email": "john@spxis.com"
+  },
+  "contributors": [
+    {
+      "name": "Sébastien Gruhier",
+      "email": "sebastien.gruhier@atigeo.com"
+    },
+    {
+      "name": "Elton Pao",
+      "email": "elton.pao@atigeo.com"
+    }
+  ],
+  "description": "This is the Atigeo Alpine BeanStack Full Stack JavaScript Project.",
+  "homepage": "http://www.atigeo.com",
+  "copyright": "© 2014-2016 Atigeo LLC. All Rights Reserved.",
+  "dependencies": {
+    "PACE": "pace#~1.0.2",
+    "angular": "~1.5.5",
+    "angular-bootstrap": "~0.12.0",
+    "angular-loading": "~0.1.4",
+    "angular-ui-notification": "~0.1.0",
+    "angular-ui-router": "~0.2.15",
+    "angular-ui-utils": "~0.1.1",
+    "font-awesome": "~4.5.0",
+    "humanize": "~0.0.9",
+    "jquery": "~1.11.1",
+    "moment": "~2.8.3",
+    "ng-notifications-bar": "~0.0.6",
+    "ngstorage": "~0.3.9",
+    "underscore": "~1.7.0",
+    "underscore.string": "~2.3.3"
+  },
+  "resolutions": {
+    "angular": "~1.5.5",
+    "font-awesome": "~4.5.0"
+  },
+  "main": [
+    "./dist/js/xui-bootstrap.js",
+    "./dist/css/xui-bootstrap.css",
+    "./dist/fonts/*"
+  ],
+  "ignore": [
+    "**/.*",
+    ".DS_Store",
+    ".gitignore",
+    ".idea",
+    ".sass-cache",
+    "bower_components",
+    "node_modules",
+    "logs",
+    "temp",
+    "test",
+    "tests"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "atigeo",
+    "xui",
+    "xpatterns",
+    "platform",
+    "node",
+    "nodejs",
+    "express",
+    "grunt",
+    "bower",
+    "big data",
+    "beanstack",
+    "alpine"
+  ],
+  "devDependencies": {}
+}

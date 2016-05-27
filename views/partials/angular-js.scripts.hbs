@@ -1,0 +1,14 @@
+<script>
+    angular.module('$preloaded', [])
+           .constant('$preloaded', {{{ json preloaded }}} );
+</script>
+{{#if environments.development}}
+    <script src="jspm_packages/system.js"></script>
+    <script src="/conf/config.js"></script>
+    <script>
+      System.import('dist/js/client/app').then(function() {
+    });
+    </script>
+{{else}}
+    <script type="text/javascript" src="{{ preloaded.config.virtualDirectory }}/dist/js/app.min.js?{{ package.version }}"></script>
+{{/if}}
