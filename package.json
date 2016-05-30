@@ -41,7 +41,7 @@
     "npm": ">=3.8.9"
   },
   "dependencies": {
-    "async": "^1.0.0",
+    "async": "^1.5.2",
     "bluebird": "^3.4.0",
     "body-parser": "^1.15.1",
     "bower": "^1.7.9",
@@ -55,11 +55,9 @@
     "handlebars": "^4.0.5",
     "handlebars-helpers": "^0.6.1",
     "json-stringify-safe": "^5.0.0",
+    "jspm": "^0.16.24",
     "mkdirp": "^0.5.1",
     "moment": "^2.13.0",
-    "moment-timezone": "^0.3.1",
-    "passport": "^0.2.2",
-    "passport-local": "^1.0.0",
     "pretty-error": "^2.0.0",
     "request": "^2.72.0",
     "request-promise": "^3.0.0",
@@ -78,6 +76,7 @@
     "grunt-bower-task": "^0.4.0",
     "grunt-bowercopy": "^1.1.0",
     "grunt-bump": "0.8.0",
+    "grunt-compile-handlebars": "^2.0.1",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-compass": "^1.1.1",
     "grunt-contrib-concat": "^1.0.1",
@@ -91,8 +90,7 @@
     "grunt-shell": "^1.1.1",
     "grunt-systemjs-builder": "^0.2.2",
     "grunt-version": "^1.1.1",
-    "jspm": "^0.16.24",
-    "livereload": "^0.3.7",
+    "livereload": "^0.4.1",
     "load-grunt-tasks": "^3.3.0"
   },
   "directories": {

@@ -15,7 +15,6 @@ var bodyParser = require('body-parser');
 var dates = require('./config/dates');
 var sprintf = require('sprintf').sprintf;
 var session = require('express-session');
-var moment = require('moment-timezone');
 
 logger.info('Starting %s v%s', pkg.displayName, pkg.version);
 logger.info('Process running at "%s"', process.title);

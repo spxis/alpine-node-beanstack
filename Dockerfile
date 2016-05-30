@@ -5,16 +5,16 @@ MAINTAINER SPX Interactive Software <docker@spxis.com>
 EXPOSE 3000
 
 # ---- Setup some basic ENV variables ----
-ENV NODE_ENV production \ 
-    && NODE_DOCKER true \
-    && NODE_HOST "alpine:edge" \
-    && NODE_VERSION "6.2.0" \
-    && NODE_NPM_VERSION 3.8.9"
+ENV NODE_ENV development \
+    NODE_DOCKER true \
+    NODE_HOST "alpine:edge" \
+    NODE_VERSION "6.2.0" \
+    NODE_NPM_VERSION 3.8.9"
 
 # ---- ENV variables for building the docker ----
 ENV CONFIG_FLAGS "--fully-static --without-npm" \
-    && DEL_PKGS "libgcc libstdc++" \
-    && RM_DIRS /usr/include
+    DEL_PKGS "libgcc libstdc++" \
+    RM_DIRS /usr/include
 
 # ---- Install base Linux packages ----
 RUN apk update \
@@ -35,7 +35,9 @@ RUN apk update \
 # ---- Install ruby for compass and remove it ----
 RUN apk add --update build-base libffi-dev ruby ruby-dev \
     && gem install sass compass --no-ri --no-rdoc \
-    && apk del build-base libffi-dev ruby-dev
+    && apk del build-base libffi-dev
+    # Let's keep the ruby-dev package for now.
+    # ruby-dev
 
 # ---- Upgrade the npm package ----
 # RUN npm install -g npm@3.8.9
